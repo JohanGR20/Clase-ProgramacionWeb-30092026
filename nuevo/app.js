@@ -5,13 +5,13 @@ const usuarios = [];
 const form = document.getElementById("userForm");
 const salida = document.getElementById("salidaJSON");
 
-form.addEventListener("submit", function (e) {  
+form.addEventListener("submit", function (e) {
     e.preventDefault(); // Evitar que se recargue la página al enviar el formulario
-    
+
     // Obtener los valores de los campos del formulario
     const nombre = document.getElementById("nombre").value;
     const correo = document.getElementById("correo").value;
-    
+
     const nuevoUsuario = {
         nombre: nombre,
         correo: correo

@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Configuración general de la página y enlace a la hoja de estilos. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilos.css">
 
 </head>
+
 <body id="cuerpo">
+    <!-- Contenedor principal que agrupa la pantalla y los botones de la calculadora. -->
     <div class="calculadora">
+        <!-- Pantalla donde se muestran los números, las operaciones y sus resultados. -->
         <input type="text" id="pantalla" disabled>
         <br>
+
+        <!-- Primera fila: números del 1 al 3 y operador de suma. -->
         <input type="button" value="1" onclick="agregarPantalla('1')">
         <input type="button" value="2" onclick="agregarPantalla('2')">
         <input type="button" value="3" onclick="agregarPantalla('3')">
         <input type="button" value="+" onclick="agregarPantalla('+')">
         <br>
+
+        <!-- Segunda fila: números del 4 al 6 y operador de resta. -->
         <input type="button" value="4" onclick="agregarPantalla('4')">
         <input type="button" value="5" onclick="agregarPantalla('5')">
         <input type="button" value="6" onclick="agregarPantalla('6')">
         <input type="button" value="-" onclick="agregarPantalla('-')">
         <br>
+
+        <!-- Tercera fila: números del 7 al 9 y operador de multiplicación. -->
         <input type="button" value="7" onclick="agregarPantalla('7')">
         <input type="button" value="8" onclick="agregarPantalla('8')">
         <input type="button" value="9" onclick="agregarPantalla('9')">
         <input type="button" value="*" onclick="agregarPantalla('*')">
         <br>
+
+        <!-- Última fila: limpiar la pantalla, ingresar cero, calcular y dividir. -->
         <input type="button" value="C" onclick="limpiarPantalla()">
         <input type="button" value="0" onclick="agregarPantalla('0')">
         <input type="button" value="=" onclick="calcular()">
         <input type="button" value="/" onclick="agregarPantalla('/')">
     </div>
-    
+
 </body>
+<!-- Carga las funciones JavaScript que controlan la calculadora. -->
 <script src="app.js"></script>
+
 </html>

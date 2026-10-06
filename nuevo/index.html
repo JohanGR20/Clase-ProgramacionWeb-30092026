@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <!-- Define la codificación, la adaptación a dispositivos y el título de la pestaña. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-<h2>Formulario para guardar datos</h2>
-<form id="userForm">
-<label for="nombre">Nombre:</label>
-<input type="text" id="nombre" required ><br><br>
+    <!-- Encabezado que indica el propósito del formulario. -->
+    <h2>Formulario para guardar datos</h2>
 
-<label for="correo">Correo:</label>
-<input type="email" id="correo" required><br><br>
+    <!-- Formulario para capturar el nombre y el correo de un usuario. -->
+    <form id="userForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
 
-<button type="submit" >Guardar</button>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required><br><br>
 
-</form>
+        <!-- Envía los datos del formulario para que JavaScript los procese. -->
+        <button type="submit">Guardar</button>
+    </form>
 
-<button id="descargarBtn">Descargar JSON</button>
+    <!-- Permite descargar como archivo JSON los datos guardados. -->
+    <button id="descargarBtn">Descargar JSON</button>
 
-<h3>Usuarios guardados:</h3>
-<pre id="salidaJSON" >
+    <!-- Área donde JavaScript muestra los usuarios guardados en formato JSON. -->
+    <h3>Usuarios guardados:</h3>
+    <pre id="salidaJSON">
 
 </pre>
 </body>
-<script src="app.js" ></script>
+
+<!-- Carga la lógica JavaScript del formulario y de la descarga de datos. -->
+<script src="app.js"></script>
+
 </html>

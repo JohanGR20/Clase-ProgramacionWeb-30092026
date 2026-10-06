@@ -1,11 +1,12 @@
-.calculadora{
+.calculadora {
     width: 300px;
     margin: 50px auto;
     border: 2px solid #4A5C6A;
-    padding: 15px;  
+    padding: 15px;
     border-radius: 15px;
     background-color: #11212D;
 }
+
 input[type="button"] {
     width: 60px;
     height: 60px;
@@ -15,7 +16,4 @@ input[type="button"] {
     border-radius: 5px;
     cursor: pointer;
     background-color: #9ba8ab;
-}
-.cuerpo{
-
 }
